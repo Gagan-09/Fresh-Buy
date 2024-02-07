@@ -1,0 +1,37 @@
+/* Add this to your stylesheet or in a style tag within your HTML */
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Adjust spacing between cards */
+    scroll-snap-align: start;
+}
+
+body{
+    background-color:azure;
+    /* background-color:beige; */
+}
+
+#buy-now-button {
+    display: none;
+}
+
+/* Show the button on devices with a screen width of 768px and above */
+/* @media (min-width: 768px) {
+    #buy-now-button {
+        display: inline-block;
+    }
+} */
+
+.foot{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+}

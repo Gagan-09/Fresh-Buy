@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Fresh-Buy - Your one stop destination for veggies and fruits</title>
+  </head>
+
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <!-- <button type="button" class="btn btn-outline-primary" >Groc-shop</button> -->
+          <a class="navbar-brand" href="#"><b><u>Fresh-Buy</u></b></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="orders.html">My orders</a>
+                <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="Work in Progress">My orders</button> -->
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="buyveggies.html">Vegetables</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="buyfruits.html">Fruits </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="buydryfruits.html">Dry Fruits & Nuts</a>
+                  <!-- <a class="dropdown-item" href="#">About Us</a> -->
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Menu
+                </a>
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Wishlist</a>
+                  <a class="dropdown-item" href="#">Refund and Returns </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="contact.html">Contact Support</a>
+                   <a class="dropdown-item" href="#">About Us</a> 
+                </div> -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item disabled" href="#">Wishlist</a>
+                  <a class="dropdown-item disabled" href="#">Refund and Returns </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="contact.html">Contact Support</a>
+                  <!-- <a class="dropdown-item" href="#">About Us</a> -->
+                </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+              <!-- <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li> -->
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Disabled </a>
+              </li> -->
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                Search
+              </button> -->
+              <form class="form-inline my-2 my-lg-0" id="searchForm">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="searchInput"
+                />
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                  Search
+                </button>
+              </form>
+              
+            </form>
+          <div class="mx-2">
+            <!-- <button class="btn btn-danger"> -->
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#loginModal">
+              Login
+            </button>
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#signupModal">Sign up</button>
+          </div>
+
+        </div>
+      </nav>
+
+      
+      <!-- login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login to Fresh-Buy</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Sign up Modal -->
+      <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupModalLabel">Create a Fresh-Buy account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputName">Name</label>
+                  <input type="text" class="form-control" id="exampleInputName" placeholder="Enter your name">
+              </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="cexampleInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="cexampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Create account</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+                                  <!-- carousel -->
+      <div class="bd-example">
+        <!-- <div class="container"> for  gaps in the side -->
+        <div class="container-fluid p-0"> <!-- p-0 : padding 0 for full screen-->
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide carousel-fade"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleCaptions"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- <img src="https://source.unsplash.com/950x430/?vegetable" -->  
+                <img 
+                  src="Images/veggies.jpg" width="930" height="730"
+                  class="d-block w-100"
+                  alt="Fresh Veggies"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h2><b><u>Fresh Veggies</u></b></h2>
+                  <p>
+                    Our organically farmed veggies provides you the nutrition
+                    better than any other brand which just promises.
+                  </p>
+                  <!-- <button class="btn btn-success">Buy Now!</button> -->
+                  <!-- <a href="buyveggies.html" class="btn btn-success" target="_blank">Buy Now!</a> -->
+                  <a href="buyveggies.html" class="btn btn-success">Buy Now!</a>
+                  <!-- <a href="buyveggies.html" class="btn btn-success d-block d-md-inline-block">Buy Now!</a> -->
+                  <!-- <a href="buyveggies.html" class="btn btn-success" id="buy-now-button">Buy Now!</a> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!-- <img src="https://source.unsplash.com/950x430/?fruits" -->
+                  <img src="Images/fruits.jpg" width="930" height="730"
+                  class="d-block w-100"
+                  alt="Fresh Fruits"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h2><b><u>Fresh Fruits</u></b></h2>
+                  <p>
+                    an apple a day may not keep the doctor away but our fruits
+                    will definitely keep you healthy
+                  </p>
+                  <!-- <button class="btn btn-danger">Buy Now!</button> -->
+                  <!-- <button class="btn btn-success">Buy Now!</button> -->
+                  <!-- <a href="https://www.google.com" class="btn btn-success" target="_blank">Buy Now!</a> -->
+                  <a href="buyfruits.html" class="btn btn-success">Buy Now!</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!-- <img src="https://source.unsplash.com/950x430/?nuts" -->
+                <img src="Images/nuts.jpg" width="930" height="730"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h2><b><u>Nuts-e-Nuts</u></b></h2>
+                  <p>
+                    Always forgetting something important????<br />Buy our <b>Almonds</b> and never
+                    forget!
+                  </p>
+                  <!-- <button class="btn btn-success">Buy Now!</button> -->
+                  <a href="buydryfruits.html" class="btn btn-success">Buy Now!</a>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+
+       <br>
+
+       <div class="vegetable text-center">
+        <h3>
+            <!-- Today's Top Vegetable Deals -->
+            Today's top deals on Vegetables
+        </h3>
+       </div>
+
+
+                                                <!-- Adding cards for Vegetables -->
+
+        <div class="card-deck my-4">
+            <div class="card">
+                <!-- <img src="https://source.unsplash.com/450x300/?vegetable,Onions"  -->
+                <img src="Images/onion.jpg" height="215"
+                class="card-img-top" alt="Organic Onions">
+                <div class="card-body">
+                    <h5 class="card-title">Organic Onions</h5>
+                    <p class="card-text">Discover the crisp and flavorful taste of our organic onions. Grown with care, these onions are pesticide-free and bursting with natural goodness. Elevate the taste of your dishes with these versatile and aromatic organic onions.</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <a href="#" class="btn btn-primary">Buy now ₹20 per Kg</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <!-- <img src="https://source.unsplash.com/450x300/?vegetable,Tomato" -->
+                <img src="Images/tomato.jpg" height="215"
+                 class="card-img-top" alt="Organic Tomatoes">
+                <div class="card-body">
+                    <h5 class="card-title">Organic Tomatoes</h5>
+                    <p class="card-text">Indulge in the vibrant taste of our organic tomatoes. Grown under the sun, these tomatoes are rich in flavor and free from harmful chemicals. Whether you're making a refreshing salad or a savory sauce, our organic tomatoes will add a burst of freshness to your culinary creations.</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <a href="#" class="btn btn-primary">Buy now ₹25 per Kg </a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <!-- <img src="https://source.unsplash.com/450x300/?vegetable,spinach"  -->
+                <img src="Images/spinach.jpg"  height="215"
+                class="card-img-top" alt="Organic Spinach">
+                <div class="card-body">
+                    <h5 class="card-title">Organic Spinach</h5>
+                    <p class="card-text">Delicious and nutrient-rich organic spinach. Packed with vitamins and minerals. Packed with iron for healthy blood circulation, our fresh spinach is grown without harmful chemicals. Perfect addition to salads, smoothies, and cooked dishes. Add this vibrant green goodness to your diet for a healthy lifestyle.</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <a href="#" class="btn btn-primary">Buy now ₹20 per bunch </a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <!-- <img src="https://source.unsplash.com/450x300/?vegetable,carrot"  -->
+                <img src="Images/carrot.jpg" height="215"
+                class="card-img-top" alt="Carrots">
+                <div class="card-body">
+                    <h5 class="card-title">Organic Carrots</h5>
+                    <p class="card-text">Experience the sweet crunchiness of our organic carrots. Grown with dedication and free from harmful pesticides, these carrots are a delightful addition to your meals. Packed with beta-carotene for eye health and antioxidants, our fresh carrots are perfect for snacking, cooking, or juicing.</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <a href="#" class="btn btn-primary">Buy now ₹15 per bunch</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="vegetable text-center">
+          <h3>
+              <!-- Today's Top Fruit Deals -->
+              Today's top deals on Fruits
+          </h3>
+         </div>
+
+                                              <!-- Adding cards for Fruits -->
+         <div class="card-deck my-4">
+          <div class="card">
+              <!-- <img src="https://source.unsplash.com/450x300/?fruits,apple"  -->
+              <img src="Images/apple.jpg" height="215"
+              class="card-img-top" alt="Apples">
+              <div class="card-body">
+                  <h5 class="card-title">Apples</h5>
+                  <!-- <p class="card-text">Discover the crisp sweetness of our handpicked apples, straight from the orchard to your table. From tart Granny Smith to sweet Fuji, our selection promises freshness and flavor in every bite. Perfect for snacking or adding a natural touch to your recipes, our apples are a delicious and nutritious choice for any occasion.</p> -->
+                  <p class="card-text">Sourced from the finest orchards and cultivated with care, our apples embody the essence of pure, wholesome flavor. With each bite, savor the perfect balance of sweetness and tanginess, creating a delightful symphony of taste sensations. Trust in our commitment to quality and taste, and let our premium apples become the centerpiece of bringing joy and satisfaction to every bite.</p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                  <a href="#" class="btn btn-primary">Buy now ₹250 per Kg</a>
+              </div>
+          </div>
+      
+          <div class="card">
+              <!-- <img src="https://source.unsplash.com/450x300/?vegetable,Tomato" -->
+              <img src="Images/orange.jpg"  height="215"
+               class="card-img-top" alt="Oranges">
+              <div class="card-body">
+                  <h5 class="card-title">Oranges</h5>
+                  <p class="card-text">Experience the vibrant burst of citrus flavor with our freshly picked oranges, our oranges are a delightful addition to your day. Packed with vitamin C and refreshing juiciness, they're perfect for snacking, juicing, or adding a pop of flavor to your culinary creations. Taste the sunshine with our premium selection of oranges, guaranteed to bring a smile to your face with every bite.</p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                  <a href="#" class="btn btn-primary">Buy now ₹120 per Kg </a>
+              </div>
+          </div>
+      
+          <div class="card">
+              <!-- <img src="https://source.unsplash.com/450x300/?vegetable,spinach"  -->
+              <img src="Images/grape.jpg"  height="215" 
+              class="card-img-top" alt="Grapes">
+              <div class="card-body">
+                  <h5 class="card-title">Grapes</h5>
+                  <p class="card-text">Savor the crisp, refreshing taste of our green grapes, a true symbol of summer's bounty. Bursting with sweetness and packed with antioxidants, our hand-selected green grapes are the perfect snack for any occasion. Whether enjoyed on their own, tossed into a fruit salad, or frozen for a cool treat, these juicy gems will tantalize your taste buds and leave you craving more.</p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                  <a href="#" class="btn btn-primary">Buy now ₹40 per Kg </a>
+              </div>
+          </div>
+      
+          <div class="card">
+              <!-- <img src="https://source.unsplash.com/450x300/?vegetable,carrot"  -->
+              <img src="Images/strawberry.jpg" height="215"
+              class="card-img-top" alt="Strawberries">
+              <div class="card-body">
+                  <h5 class="card-title">Strawberries</h5>
+                  <p class="card-text">Indulge in the juicy sweetness of our strawberries, ripe and ready to delight your senses. Bursting with flavor and vibrant color, our handpicked strawberries are the perfect addition to your day. Whether enjoyed fresh, in a salad, or as a topping for your favorite dessert, these luscious berries are sure to brighten any meal. Treat yourself to the taste of summer with our premium strawberries.</p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                  <a href="#" class="btn btn-primary">Buy now ₹70 per 500g</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="vegetable text-center">
+        <h3>
+            <!-- Today's Top Fruit Deals -->
+            Today's top deals on Dry Fruits & Nuts
+        </h3>
+       </div>
+
+                                            <!-- Adding cards for dry fruits & nuts -->
+       <div class="card-deck my-4">
+        <div class="card">
+            <!-- <img src="https://source.unsplash.com/450x300/?fruits,apple"  -->
+            <img src="Images/cashew.jpg" height="215"
+            class="card-img-top" alt="Cashew Nuts">
+            <div class="card-body">
+                <h5 class="card-title">Cashew Nuts</h5>
+                <p class="card-text">Indulge in the buttery richness of our premium cashew nuts, carefully selected to deliver unrivaled flavor and quality. Perfect for snacking, baking, or adding a crunchy texture to your favorite dishes, our cashews are a versatile and delicious choice. Packed with essential nutrients and irresistible taste, these nuts are sure to satisfy your cravings and elevate your culinary creations</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+                <a href="#" class="btn btn-primary">Buy now ₹780 per Kg</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <!-- <img src="https://source.unsplash.com/450x300/?vegetable,Tomato" -->
+            <img src="Images/almond.jpg"  height="215"
+             class="card-img-top" alt="Almonds">
+            <div class="card-body">
+                <h5 class="card-title">Almonds</h5>
+                <p class="card-text">Savor the wholesome goodness of our premium almonds, a crunchy and nutritious treat for any occasion. Whether enjoyed as a snack, sprinkled over salads, or incorporated into your favorite recipes, our almonds offer a satisfying crunch and delightful flavor. Packed with protein, fiber, and essential nutrients, they're a smart and delicious choice for fueling your day.</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+                <a href="#" class="btn btn-primary">Buy now ₹810 per Kg </a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <!-- <img src="https://source.unsplash.com/450x300/?vegetable,spinach"  -->
+            <img src="Images/pista.jpg"  height="215" 
+            class="card-img-top" alt="Pistachios">
+            <div class="card-body">
+                <h5 class="card-title">Pistachios</h5>
+                <p class="card-text">Experience the irresistible crunch and rich flavor of our premium pistachios, harvested at peak ripeness for maximum taste and freshness. Perfect for snacking, adding to your favorite dishes, or garnishing desserts, our pistachios offer a delightful combination of nutty goodness and satisfying texture. Packed with protein, fiber, and healthy fats, they're a deliciously wholesome choice for any time of day.</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+                <a href="#" class="btn btn-primary">Buy now ₹251 per 250g</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <!-- <img src="https://source.unsplash.com/450x300/?vegetable,carrot"  -->
+            <img src="Images/walnut1.jpg" height="215"
+            class="card-img-top" alt="Walnuts">
+            <div class="card-body">
+                <h5 class="card-title">Walnuts</h5>
+                <p class="card-text">Discover the rich, earthy flavor and satisfying crunch of our premium walnuts, meticulously selected for their quality and freshness. Our walnuts offer a delicious burst of nutty goodness in every bite. Packed with omega-3 fatty acids and antioxidants, they're not only tasty but also a nutritious choice for supporting overall health and well-being.</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+                <a href="#" class="btn btn-primary">Buy now ₹230 per 250g</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <div class="foot">
+        ©2024,FreshBuy.com
+      </div>
+    </footer>
+
+
+
+    
+
+<!-- 
+        <script>
+          document.getElementById('signupForm').addEventListener('submit', function(event) {
+              var password = document.getElementById('exampleInputPassword1').value;
+              var confirmPassword = document.getElementById('cexampleInputPassword1').value;
+              if (password !== confirmPassword) {
+                  document.getElementById('passwordError').style.display = 'block';
+                  event.preventDefault(); // Prevent form submission
+              }
+          });
+      </script> -->
+        
+  </body>
+
+
+
+
+
+    
+</html>
+
+
+
